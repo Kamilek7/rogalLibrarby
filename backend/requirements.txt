@@ -1,0 +1,8 @@
+requests
+beautifulSoup4
+lxml
+flask
+flask-bcrypt
+flask-cors
+flask-mysqldb
+dotenv

@@ -1,0 +1,275 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --s: 140px; /* control the size*/
+  --c1: #160d12;
+  --c2: #131d17;
+  
+  --_g: #0000 52%,var(--c1) 54% 57%,#0000 59%; 
+  background: 
+   radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
+   radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
+   radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
+   radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
+   var(--c2);
+  background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+
+  --gradientBG: #141414b1;
+
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #131d11;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+#searchBar
+{
+  width:fit-content;
+  margin:auto;
+  display:flex;
+}
+#searchBar input[type=text]
+{
+  height: 2.5rem;
+  font-size: 2rem;
+  color:#b9b9b9;
+  text-align: center;
+  width:40vw;
+  padding:0;
+  border: 2px solid white;
+}
+.bookFound 
+{
+  margin:auto;
+  display:flex;
+  width:50vw;
+  height: 13rem;
+  padding: 1rem;
+  background-color: #3e474098;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+}
+.bookContent
+{
+  margin-inline:auto;
+  padding: 1.5rem 3rem;
+  width:70%;
+}
+.bookContent .title
+{
+  font-weight: bold;
+}
+.bookContent .authors
+{
+  display:flex;
+  width:100%;
+  margin:auto;
+}
+.bookContent .author
+{
+    margin:auto;
+  font-size: 1.2rem;
+}
+.bookContent .bookData
+{
+    margin-top: 1.5rem;
+}
+.cover
+{
+  aspect-ratio: 3 / 4;
+  margin-right:1rem;
+  border-radius: 0.5rem;
+}
+.addToLibrary
+{
+  margin-block:auto;
+}
+.bookContainer
+{
+  margin:auto;
+  width:60%;
+  padding-inline: 5rem;
+  padding-block: 2rem;
+  height: 50vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  mask-image: linear-gradient(0deg, transparent, black 10%, black 90%, transparent);
+}
+.divTitle
+{
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.9rem;
+}
+.searchBarBG
+{
+  padding-top:2rem;
+  padding-bottom:4rem;
+  position:relative;
+  top:0;
+  left:0;
+  width:100vw;
+  background: var(--gradientBG);
+  mask-image: linear-gradient(180deg, black, black 95%, transparent);
+}
+
+.contentBox
+{
+  border-radius: 2rem;
+  margin:auto;
+  margin-top:2rem;
+  width:70%;
+  padding: 2rem;
+  background:var(--gradientBG);
+}
+
+form input
+{
+  display:block;
+}
+
+.login
+{
+  margin:auto;
+}
+.login input
+{
+  margin:auto;
+  margin-bottom: 1rem;
+}
+.login input:last-child
+{
+  margin:auto;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.login p
+{
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.bookContainerUser
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:auto;
+  width:80%;
+  padding-inline: 5rem;
+  padding-block: 2rem;
+  height: 37vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  mask-image: linear-gradient(0deg, transparent, black 10%, black 90%, transparent);
+}
+
+.bookContainerUser .bookFound
+{
+    margin:auto;
+    border-bottom: solid 5px;
+    margin-block: 2rem;
+    display:flex;
+    width:17rem;
+    height: 13rem;
+    padding: 1rem;
+    background-color: #3e474098;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+}
+
+.remove
+{
+  height: 3rem;
+  width: 4rem;
+  margin:auto;
+}
+.remove:hover
+{
+  border-color: rgb(114, 4, 4);
+}
+.read
+{
+  width: 4rem;
+  height: 3rem;
+  margin:auto;
+}
+.onHold
+{
+  width: 4rem;
+  height: 3rem;
+  margin:auto;
+}
+.onHold:hover
+{
+  border-color: rgb(190, 148, 33);
+}
+.vert-buttons
+{
+  margin-inline:auto;
+  display:grid;
+  grid-template-columns: 1fr;
+}
