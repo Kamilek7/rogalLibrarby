@@ -2,12 +2,22 @@ import { useState } from 'react'
 
 const SearchBar = ({callback, user}) => {
     const [title, setTitle] = useState("")
+    console.log(user);
     const searchForTitle = async () => {
         var newTitle = title.replaceAll(" ", "+")
+        if (typeof user == 'undefined')
+            user = 0;
         const url = "https://librarby-backend.rogalrogalrogalrogal.online/booksSearchGoodReads/" + newTitle + "/" + user;
         const response = await fetch(url);
-        const bookData = await response.json();
-        callback(bookData);
+        if (response.status ==201)
+        {
+            const bookData = await response.json();
+            callback(bookData);
+        }
+        else
+        {
+            callback(0);
+        }
     }
     return <div class='searchBarBG'>
         <div class='divTitle'>{user ? "Wyszukaj książkę aby dodać ją do swojego zbioru" : "Wyszukaj dowolną książkę z bazy danych."}</div>

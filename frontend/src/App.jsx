@@ -9,9 +9,21 @@ import { useCookies } from 'react-cookie'
 function App() {
   const [cookies, setCookie, removeCookie] = useCookies(['loginID']);
   const [errorState, setError] = useState("");
+  const [errorStateBooks, setErrorBook] = useState("");
   const [foundBooks, setBooks] = useState([])
+
+  const wyloguj = () => {
+        setCookie("loginID", 0);
+        setError("");;
+        setErrorBook("");
+  }
+
   const fetchSearchedBooks = (bookData) => {
-    setBooks(bookData)
+    setErrorBook("")
+    if (bookData!=0)
+      setBooks(bookData);
+    else
+      setErrorBook("Nie znaleziono żadnej książki o danej nazwie!");
   }
   const handleLogin = async (data) => {
     data.e.preventDefault()
@@ -42,13 +54,14 @@ function App() {
 
   const userDivs = () => {
     return (<div>
-      {cookies.loginID ? <UserBoard setCookie={setCookie} userID={cookies.loginID} booksFromOtherPart={foundBooks} /> : <Login error={errorState} onLogin={handleLogin}/>}</div>
+      {cookies.loginID ? <UserBoard setCookie={setCookie} userID={cookies.loginID} booksFromOtherPart={foundBooks} wyloguj={wyloguj} /> : <Login error={errorState} onLogin={handleLogin}/>}</div>
     )
   }
 
   return (
     <>
     <SearchBar callback={fetchSearchedBooks} user={cookies.loginID}></SearchBar>
+    <span style={{"color":"red"}}>{errorStateBooks}</span>
     {foundBooks.length!=0 ? <BookSearched bookData={foundBooks} reset={setBooks} userID={cookies.loginID}></BookSearched> : <div>{userDivs()}</div>}
     
     </>

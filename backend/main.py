@@ -35,11 +35,14 @@ def get_books_parse(NAME, userID):
     temp = cursor.fetchall()
     url = urlFromTitle(NAME)
     data = parseURL(url)
-    for datum in data:
-        for book in temp:
-            if book["tytul"]==datum["Title"]:
-                datum["InDataBase"] = True
-    return jsonify({"ksiazki" : data}), 201
+    if data!=0:
+        for datum in data:
+            for book in temp:
+                if book["tytul"]==datum["Title"]:
+                    datum["InDataBase"] = True
+        return jsonify({"ksiazki" : data}), 201
+    else:
+        return jsonify({"message" : "No books were found!"}), 300
 
 @app.route("/register", methods=["POST"])
 def register():
@@ -108,10 +111,13 @@ def addNewBookFromScratch(userID):
             return jsonify({"message": "Coś poszło nie tak."}), 412
         
 
-@app.route("/getBooks/<int:userID>")
-def getBooks(userID):
+@app.route("/getBooks/<int:userID>/<int:category>")
+def getBooks(userID, category):
     cursor = mysql.connection.cursor()
-    cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE userID={userID} ORDER BY tytul;")
+    if category==0:
+        cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE userID={userID} ORDER BY tytul;")
+    else:
+        cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE kategoria={category};")
     res = cursor.fetchall()
     return jsonify({"books": res}), 206
 
@@ -142,6 +148,13 @@ def removeBook(bookID):
     cursor.execute(f"DELETE FROM zaleznosci WHERE ID={bookID}")
     mysql.connection.commit()
     return jsonify({"message": "Aktualizacja się udała."}), 207
+
+@app.route("/getCategories/<int:userID>")
+def getCategories(userID):
+    cursor = mysql.connection.cursor()
+    cursor.execute(f"SELECT * FROM kategorie WHERE user={userID}")
+    res = cursor.fetchall()
+    return jsonify({"categories" : res}), 208
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=8000)

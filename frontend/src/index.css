@@ -157,10 +157,17 @@ button:focus-visible {
 }
 .divTitle
 {
-  margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 1.9rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+.divTitleMinor
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .searchBarBG
 {
@@ -170,17 +177,18 @@ button:focus-visible {
   top:0;
   left:0;
   width:100vw;
-  background: var(--gradientBG);
-  mask-image: linear-gradient(180deg, black, black 95%, transparent);
+  background: #141414b1;
+
 }
 
 .contentBox
 {
-  border-radius: 2rem;
+  border-radius: 0 0 2rem 2rem;
   margin:auto;
-  margin-top:2rem;
+  margin-top:0;
+
   width:70%;
-  padding: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   background:var(--gradientBG);
 }
 
@@ -212,12 +220,11 @@ form input
 
 .bookContainerUser
 {
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
   margin:auto;
   width:80%;
   padding-inline: 5rem;
-  padding-block: 2rem;
+  padding-block: 1rem;
   height: 37vh;
   overflow: scroll;
   overflow-x: hidden;
@@ -226,18 +233,29 @@ form input
   margin-bottom: 2rem;
   mask-image: linear-gradient(0deg, transparent, black 10%, black 90%, transparent);
 }
+.bookContainerGrid
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.containerTitle
+{
+  margin:auto;
+  margin-block: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
 
 .bookContainerUser .bookFound
 {
-    margin:auto;
-    border-bottom: solid 5px;
-    margin-block: 2rem;
+    margin-block: 1rem;
     display:flex;
     width:17rem;
     height: 13rem;
     padding: 1rem;
     background-color: #3e474098;
-    margin-bottom: 1rem;
     border-radius: 0.8rem;
 }
 
@@ -272,4 +290,37 @@ form input
   margin-inline:auto;
   display:grid;
   grid-template-columns: 1fr;
+}
+table p
+{
+  margin-block:0;
+  margin-inline: 1rem;
+}
+.progress 
+{
+  margin:auto;
+  width: 70%;
+  height: 0.4rem;
+  background-color: #2c2c2c2d;
+  padding:5px;
+  border-radius: 1rem;
+  margin-block: 0.7rem;
+}
+.progressIn
+{
+  margin-top:auto;
+  margin-bottom: auto;
+  height: 90%;
+  background-color: rgba(0, 128, 0, 0.534);
+  border-radius: 1rem;
+}
+
+.contentBox select
+{
+  margin-bottom: 1rem;
+}
+
+#headerBox
+{
+  margin-top:  -2rem;
 }

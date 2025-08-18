@@ -28,18 +28,22 @@ def parseURL(url):
         return soup
     page = get_soup(url)
     titles = page.find_all("table", class_="tableList")
-    list = titles[0].find_all("tr")
+    if len(titles)>0:
+        list = titles[0].find_all("tr")
 
-    books = []
+        books = []
 
-    for book in list:
-        authors =book.find_all("a", class_="authorName")
-        authors = [author.find_all("span", itemprop="name")[0].get_text() for author in authors]
-        bookName = book.find_all("a", class_="bookTitle")
-        bookName = bookName[0].find_all("span", itemprop="name")[0].get_text()
-        image = book.find_all("img", class_="bookCover")[0]["src"]
-        image = changeImageSrc(image)
-        grayText = re.sub(' +', ' ', book.find_all("span", class_="greyText smallText uitext")[0].get_text().replace("\n", " ").replace("really", "").replace(" liked", "").replace(" it ",""))
-        books.append({"Title": bookName, "Authors": authors, "Cover" : image, "Info" : grayText, "InDataBase" : False})
-    
-    return books
+        for book in list:
+            authors =book.find_all("a", class_="authorName")
+            authors = [author.find_all("span", itemprop="name")[0].get_text() for author in authors]
+            bookName = book.find_all("a", class_="bookTitle")
+            bookName = bookName[0].find_all("span", itemprop="name")[0].get_text()
+            bookName = bookName.replace("\'", "")
+            image = book.find_all("img", class_="bookCover")[0]["src"]
+            image = changeImageSrc(image)
+            grayText = re.sub(' +', ' ', book.find_all("span", class_="greyText smallText uitext")[0].get_text().replace("\n", " ").replace("really", "").replace(" liked", "").replace(" it ",""))
+            books.append({"Title": bookName, "Authors": authors, "Cover" : image, "Info" : grayText, "InDataBase" : False})
+        
+        return books
+    else:
+        return 0
