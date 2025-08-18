@@ -1964,3 +1964,7 @@ INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Systemy operacyjne
 172.18.0.15 - - [18/Aug/2025 23:49:18] "[35m[1mGET /getBooks/1/1 HTTP/1.1[0m" 206 -
 172.18.0.15 - - [18/Aug/2025 23:49:23] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
 172.18.0.15 - - [18/Aug/2025 23:49:23] "[35m[1mGET /getBooks/1/0 HTTP/1.1[0m" 206 -
+ * Detected change in '/home/rogal/projekty/rogalLibrarby/backend/main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 306-950-975
