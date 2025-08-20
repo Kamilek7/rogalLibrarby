@@ -111,35 +111,40 @@ def addNewBookFromScratch(userID):
             return jsonify({"message": "Coś poszło nie tak."}), 412
         
 
-@app.route("/getBooks/<int:userID>/<int:category>")
+@app.route("/getBooks/<int:userID>/<int(signed=True):category>",  methods=["POST"])
 def getBooks(userID, category):
+    nazwa = request.json.get("search")
     cursor = mysql.connection.cursor()
+    searchable=""
+    if nazwa!="":
+        searchable = f"AND tytul LIKE '%{nazwa}%' "
     if category==0:
-        cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE userID={userID} ORDER BY tytul;")
+        cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE userID={userID} {searchable}ORDER BY tytul;")
+    elif category==-1:
+        cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE userID={userID} AND kategoria='' {searchable}ORDER BY tytul;")
     else:
-        cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE kategoria={category};")
+        cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE kategoria LIKE '%{category}%' {searchable}ORDER BY tytul;")
     res = cursor.fetchall()
     return jsonify({"books": res}), 206
 
+def updateStatus(bookId, status):
+    cursor = mysql.connection.cursor()
+    cursor.execute(f"UPDATE zaleznosci SET status={status} WHERE ID={bookId}")
+    mysql.connection.commit()
+
 @app.route("/readBook/<int:bookID>", methods=["PATCH"])
 def readBook(bookID):
-    cursor = mysql.connection.cursor()
-    cursor.execute(f"UPDATE zaleznosci SET status=2 WHERE ID={bookID}")
-    mysql.connection.commit()
+    updateStatus(bookID, 2)
     return jsonify({"message": "Aktualizacja się udała."}), 207
 
 @app.route("/finishBook/<int:bookID>", methods=["PATCH"])
 def finishBook(bookID):
-    cursor = mysql.connection.cursor()
-    cursor.execute(f"UPDATE zaleznosci SET status=3 WHERE ID={bookID}")
-    mysql.connection.commit()
+    updateStatus(bookID, 3)
     return jsonify({"message": "Aktualizacja się udała."}), 207
 
 @app.route("/holdBook/<int:bookID>", methods=["PATCH"])
 def holdBook(bookID):
-    cursor = mysql.connection.cursor()
-    cursor.execute(f"UPDATE zaleznosci SET status=4 WHERE ID={bookID}")
-    mysql.connection.commit()
+    updateStatus(bookID, 4)
     return jsonify({"message": "Aktualizacja się udała."}), 207
 
 @app.route("/removeBook/<int:bookID>", methods=["DELETE"])
@@ -155,6 +160,30 @@ def getCategories(userID):
     cursor.execute(f"SELECT * FROM kategorie WHERE user={userID}")
     res = cursor.fetchall()
     return jsonify({"categories" : res}), 208
+
+
+@app.route("/changeCategories/<int:bookID>", methods=["PATCH"])
+def newCategories(bookID):
+    data = request.json.get("categories")
+    cursor = mysql.connection.cursor()
+    if len(data)==0:
+        data = ""
+    cursor.execute(f"UPDATE zaleznosci SET kategoria='{data}' WHERE ID={bookID}")
+    mysql.connection.commit()
+    return jsonify({"message": "Aktualizacja się udała."}), 209
+
+@app.route("/changeStatus/<int:bookID>/<int:status>", methods=["PATCH"])
+def changeStatus(bookID, status):
+    updateStatus(bookID, status)
+    return jsonify({"message": "Aktualizacja się udała."}), 210
+
+@app.route("/addCategory/<int:userID>", methods=["POST"])
+def addCategory(userID):
+    data = request.json.get("name")
+    cursor = mysql.connection.cursor()
+    cursor.execute(f"INSERT INTO kategorie (nazwa, user) VALUES ('{data}', {userID})")
+    mysql.connection.commit()
+    return jsonify({"message": "Kategoria dodana."}), 211
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=8000)
