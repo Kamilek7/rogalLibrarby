@@ -80,7 +80,7 @@ def login():
 
 def addBookToUser(userID, bookID):
     cursor = mysql.connection.cursor()
-    cursor.execute(f"INSERT INTO zaleznosci (userID, bookID, status) VALUES ({userID}, {bookID}, 1)")
+    cursor.execute(f"INSERT INTO zaleznosci (userID, bookID, status, kategoria) VALUES ({userID}, {bookID}, 1, '')")
     mysql.connection.commit()
     return cursor.rowcount
 

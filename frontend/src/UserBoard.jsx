@@ -248,6 +248,7 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
                 <div class='divTitleMinor'>Dodaj nową kategorię książek</div>
                 <input value={categoryName} onChange={(e) => {setCategory(e.target.value)}} type='text'></input>
                 <button class='normalButt' onClick={(e) =>{newCategory(categoryName)}}>Dodaj kategorie</button>
+                <button class='normalButt' onClick={() =>{setModal(false)}}>Wroc</button>
             </div>
         )
 
