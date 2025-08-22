@@ -2293,3 +2293,433 @@ INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Japanese Soul Cook
 172.18.0.10 - - [20/Aug/2025 22:40:47] "OPTIONS /finishBook/275 HTTP/1.1" 200 -
 172.18.0.10 - - [20/Aug/2025 22:40:47] "[35m[1mPATCH /finishBook/275 HTTP/1.1[0m" 207 -
 172.18.0.10 - - [20/Aug/2025 22:40:48] "[35m[1mPOST /getBooks/1/2 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [21/Aug/2025 11:40:58] "OPTIONS /login HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:40:58] "[35m[1mPOST /login HTTP/1.1[0m" 203 -
+172.18.0.10 - - [21/Aug/2025 11:40:58] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [21/Aug/2025 11:40:58] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:40:58] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:40:59] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [21/Aug/2025 11:40:59] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [21/Aug/2025 11:40:59] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [21/Aug/2025 11:41:33] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:41:33] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [21/Aug/2025 11:41:33] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [21/Aug/2025 11:42:14] "OPTIONS /addCategory/1 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:42:14] "[35m[1mPOST /addCategory/1 HTTP/1.1[0m" 211 -
+172.18.0.10 - - [21/Aug/2025 11:42:14] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [21/Aug/2025 11:42:19] "OPTIONS /changeCategories/94 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:42:19] "[35m[1mPATCH /changeCategories/94 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [21/Aug/2025 11:42:19] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:42:19] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [21/Aug/2025 11:42:38] "OPTIONS /changeCategories/92 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:42:38] "[35m[1mPATCH /changeCategories/92 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [21/Aug/2025 11:42:38] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:42:38] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [21/Aug/2025 11:42:44] "OPTIONS /getBooks/1/14 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:42:44] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [21/Aug/2025 11:42:44] "[35m[1mPOST /getBooks/1/14 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [21/Aug/2025 11:42:55] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [21/Aug/2025 11:42:55] "OPTIONS /getBooks/1/15 HTTP/1.1" 200 -
+172.18.0.10 - - [21/Aug/2025 11:42:55] "[35m[1mPOST /getBooks/1/15 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [21/Aug/2025 11:43:10] "[35m[1mGET /booksSearchGoodReads/mariola+jarocka/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:41:28] "OPTIONS /login HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:41:28] "[35m[1mPOST /login HTTP/1.1[0m" 203 -
+172.18.0.10 - - [22/Aug/2025 08:41:28] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 08:41:28] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:41:28] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:41:28] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 08:41:28] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 08:41:28] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 08:48:23] "[35m[1mGET /booksSearchGoodReads/alfred's+basic+adult+piano+course/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:48:24] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:48:24] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 08:48:27] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 08:48:31] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:48:31] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 08:49:39] "[35m[1mGET /booksSearchGoodReads/how+to+play+the+violin/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:49:41] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:49:41] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 08:49:55] "[35m[1mGET /booksSearchGoodReads/suzuki+violin+method/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:49:59] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:49:59] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 08:51:37] "[35m[1mGET /booksSearchGoodReads/die+kanguru+chroniken/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:51:38] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:51:38] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 08:51:57] "[35m[1mGET /booksSearchGoodReads/wstep+do+prawoznawstwa/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:52:17] "[35m[1mGET /booksSearchGoodReads/adam+sulikowski/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:52:40] "[32mGET /booksSearchGoodReads/wstep+do+prawoznawstwa+krotki+kurs/1 HTTP/1.1[0m" 300 -
+172.18.0.10 - - [22/Aug/2025 08:52:44] "[35m[1mGET /booksSearchGoodReads/wstep+do+prawoznawstwa/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:52:45] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:52:45] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 08:54:00] "[35m[1mGET /booksSearchGoodReads/historia+ustroju+panstwa/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:54:03] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:54:03] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 08:57:59] "[35m[1mGET /booksSearchGoodReads/powszechna+historia+państwa/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:58:00] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Basic Category Theory for Computer Scientists, "['Benjamin C. Pierce']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387712832i/1810837.jpg,  3.57 avg rating — 138 ratings — published 1991 — 8 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Concrete Mathematics: A Foundation for Computer Science, "['Ronald Graham', 'Donald Knuth', 'Oren Patashnik']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348780612i/112243.jpg,  4.34 avg rating — 1,858 ratings — published 1988 — 20 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Discrete Mathematics and its Applications, "['Kenneth H. Rosen']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387738050i/1800803.jpg,  3.89 avg rating — 1,530 ratings — published 2000 — 28 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Elementary business and economic statistics. 1957 [Leather Bound], "['Tuttle Alva M.']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1699028040i/124588100.jpg,  0.00 avg rating — 0 ratings — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Graph Theory and Its Applications, "['Jonathan L. Gross', 'Jay Yellen']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388784357i/388050.jpg,  4.15 avg rating — 40 ratings — published 1998 — 11 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Head First Statistics: A Brain-Friendly Guide, "['Dawn Griffiths']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328834912i/4419784.jpg,  3.95 avg rating — 272 ratings — published 2008 — 23 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Introduction to Numerical Analysis (Texts in Applied Mathematics, 12), "['J. Stoer']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348208094i/331106.jpg,  4.13 avg rating — 15 ratings — published 1983 — 8 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Matematyka dyskretna, "['Kenneth A. Ross', 'Charles R.B. Wright']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1368381355i/17911338.jpg,  3.74 avg rating — 39 ratings — published 1985 — 16 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Miller And Freunds Probability And Statistics For Engineers: Student Solutions Manual, "['Richard A.  Johnson']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1390237040i/245916.jpg,  3.89 avg rating — 61 ratings — published 1993 — 3 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Numerical Methods in Engineering & Science, "['B.S. Grewal']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1423162183i/24843926.jpg,  3.84 avg rating — 487 ratings — published 2014 — 5 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Probability and Statistical Inference, "['robert-v-hogg-elliot-a-tanis']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387735789i/1778436.jpg,  3.81 avg rating — 74 ratings — published 1977 — 37 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Teoria mnogosci, "['Baszczyk Aleksander Turek Sawomir']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1678890299i/99293871.jpg,  0.00 avg rating — 0 ratings — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Wstęp do rachunku prawdopodobieństwa. T II, "['William Feller']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1578913255i/50423740.jpg,  4.00 avg rating — 3 ratings — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Sekretne życie drzew, "['Peter Wohlleben', 'Ewa Kochanowska']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1566202781i/31449795.jpg,  4.07 avg rating — 85,858 ratings — published 2015 — 161 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Mózg: Fascynacje, problemy, tajemnice, "['Jerzy Vetulani']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1354363240i/14288841.jpg,  4.07 avg rating — 107 ratings — published 2011 — 3 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Phantoms in the Brain: Probing the Mysteries of the Human Mind, "['V.S. Ramachandran', 'Sandra Blakeslee', 'Oliver Sacks']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1409601908i/31555.jpg,  4.27 avg rating — 20,313 ratings — published 1998 — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Alfreds Basic Adult Piano Course Lesson Book, Bk 1, "['Willard A. Palmer']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348468084i/87491.jpg,  4.13 avg rating — 328 ratings — published 1983 — 14 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Alfreds Basic Adult Piano Course : Lesson Book, Level Two (Alfreds Basic Adult Piano Course, Bk 2), "['Willard A. Palmer', 'Morton Manus']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348520234i/87493.jpg,  4.20 avg rating — 101 ratings — published 1984 — 19 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Alfreds Basic Adult Piano Course Lesson Book, Bk 3 (Alfreds Basic Adult Piano Course, Bk 3), "['Willard A. Palmer']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348522311i/87499.jpg,  4.07 avg rating — 97 ratings — published 1982 — 26 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (How to Play the Violin: A Beginner’s Guide to Learning the Violin Basics, Reading Music, and Playing Songs, "['Jason Randall', 'Jason Randall']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1575173560i/49019917.jpg,  3.88 avg rating — 16 ratings — 2 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (The Suzuki Violin Method in American Music Education (About Suzuki Series), "['John D. Kendall']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1417985200i/1399599.jpg,  4.17 avg rating — 6 ratings — published 1995 — 4 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Die Känguru-Chroniken (Die Känguru-Chroniken, #1), "['Marc-Uwe Kling']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327948621i/6392654.jpg,  4.32 avg rating — 18,406 ratings — published 2009 — 23 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Wstęp do prawoznawstwa, "['Tatiana Chauvin', 'Tomasz Stawecki', 'Piotr Winczorek']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1422958195i/24814494.jpg,  3.29 avg rating — 45 ratings — published 2003 — 7 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Historia ustroju państwa, "['Krzysztof Krasowski', 'Marek Krzymkowski', 'Krystyka Sikorska-Dzięgielewska']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1522328929i/39677474.jpg, was ok 2.00 avg rating — 3 ratings — 2 editions );
+172.18.0.10 - - [22/Aug/2025 08:58:00] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 08:58:33] "[35m[1mGET /booksSearchGoodReads/wprowadzenie+do+nauk+prawnych/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 08:58:35] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 08:58:35] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:04:26] "[35m[1mGET /booksSearchGoodReads/agile+product+management+with+scrum/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:05:16] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:05:16] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:05:34] "[35m[1mGET /booksSearchGoodReads/ai+and+machine+learning+for+coders/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:05:36] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:05:36] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:06:20] "[35m[1mGET /booksSearchGoodReads/algorytmy+i+struktury+danych/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:06:32] "[35m[1mGET /booksSearchGoodReads/algorytmy+i+struktury+danych+rytter/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:06:37] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:06:37] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:11:46] "[35m[1mGET /booksSearchGoodReads/android+studio+flamingo+essentials/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:11:48] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:11:48] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:12:15] "[35m[1mGET /booksSearchGoodReads/an+introduction+to+audio+content+analysis/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:12:17] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:12:17] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:13:34] "[32mGET /booksSearchGoodReads/applied+cryptography+procotols/1 HTTP/1.1[0m" 300 -
+172.18.0.10 - - [22/Aug/2025 09:13:38] "[35m[1mGET /booksSearchGoodReads/applied+cryptography/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:13:39] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:13:39] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:15:16] "[35m[1mGET /booksSearchGoodReads/a+practical+guide+to+linux+commands/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:15:17] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:15:18] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:16:39] "[35m[1mGET /booksSearchGoodReads/artificial+intelligence+a+modern+approach/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:16:44] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:16:44] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:18:51] "[35m[1mGET /booksSearchGoodReads/computer+vision/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:18:52] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:18:52] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:19:17] "[35m[1mGET /booksSearchGoodReads/database+systems/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:19:38] "[35m[1mGET /booksSearchGoodReads/database+systems+the+complete+book/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:19:41] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:19:41] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:22:01] "[35m[1mGET /booksSearchGoodReads/deep+generative+modeling/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:22:54] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:22:54] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:23:19] "[35m[1mGET /booksSearchGoodReads/deep+learning/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:23:31] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:23:31] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:23:36] "[35m[1mGET /booksSearchGoodReads/deep+learning+foundations/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:23:39] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:23:39] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:24:28] "[35m[1mGET /booksSearchGoodReads/deploy+machine+learning+models/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:25:10] "[35m[1mGET /booksSearchGoodReads/deploy+machine+learning+models+flask/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:25:11] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:25:11] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:28:18] "[35m[1mGET /booksSearchGoodReads/designing+deep+learning/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:28:21] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:28:21] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:28:27] "[35m[1mGET /booksSearchGoodReads/designing+machine+learning/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:28:28] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:28:28] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:28:48] "[35m[1mGET /booksSearchGoodReads/digital+image+processing/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:28:50] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:28:50] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:28:58] "[35m[1mGET /booksSearchGoodReads/dive+into+deep+learning/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:29:00] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:29:00] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:29:34] "[35m[1mGET /booksSearchGoodReads/fundamentals+of+music+processing/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:29:42] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:29:43] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:29:56] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:29:56] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:35:49] "[35m[1mGET /booksSearchGoodReads/fundamentals+of+music+processing/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:36:02] "[35m[1mGET /booksSearchGoodReads/game+engine+architecture/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:36:03] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:36:03] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:36:12] "[35m[1mGET /booksSearchGoodReads/game+programming+patterns/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:36:13] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:36:13] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:36:38] "[35m[1mGET /booksSearchGoodReads/generative+artificial+intelligence/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:36:48] "[35m[1mGET /booksSearchGoodReads/generative+artificial+intelligence+exploring/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:36:50] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:36:50] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:37:07] "[32mGET /booksSearchGoodReads/handbook+of+metaheuritistics/1 HTTP/1.1[0m" 300 -
+172.18.0.10 - - [22/Aug/2025 09:37:14] "[35m[1mGET /booksSearchGoodReads/handbook+of+metaheuristics/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:37:36] "[35m[1mGET /booksSearchGoodReads/hands+on+machine+learning/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:37:39] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Powszechna historia państwa i prawa, "['Michał Sczaniecki', 'Katarzyna Sójka-Zielińska']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1400263964i/20446351.jpg,  3.19 avg rating — 16 ratings — published 1973 — 3 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Wprowadzenie do nauk prawnych. Leksykon tematyczny, "['Andrzej Bator', 'Włodzimierz Gromski', 'Kazimierz Kaźmierczyk']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1472813969i/31822533.jpg, 3.00 avg rating — 8 ratings — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Agile Product Management with Scrum: Creating Products That Customers Love, "['Roman Pichler']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1372042128i/7950745.jpg,  3.84 avg rating — 1,641 ratings — published 2008 — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (AI and Machine Learning for Coders: A Programmers Guide to Artificial Intelligence, "['Laurence Moroney']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1602567450i/53483757.jpg,  4.07 avg rating — 98 ratings — published 2021 — 8 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Algorytmy i struktury danych, "['Lech Banachowski', 'Krzysztof Diks', 'Wojciech Rytter']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1409596384i/23148259.jpg,  3.83 avg rating — 6 ratings — published 1996 — 3 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Android Studio Flamingo Essentials - Kotlin Edition: Developing Android Apps Using Android Studio 2022.2.1 and Kotlin, "['Neil Smyth']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1684216093i/150288136.jpg,  0.00 avg rating — 0 ratings — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (An Introduction to Audio Content Analysis: Applications in Signal Processing and Music Informatics, "['Alexander Lerch']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1355081246i/13838683.jpg,  4.29 avg rating — 7 ratings — published 2012 — 4 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Applied Cryptography: Protocols, Algorithms, and Source Code in C, "['Bruce Schneier']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387734235i/351301.jpg,  4.21 avg rating — 2,133 ratings — published 1993 — 28 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (A Practical Guide to Linux Commands, Editors, and Shell Programming, "['Mark G. Sobell']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387701723i/617170.jpg,  4.02 avg rating — 328 ratings — published 2005 — 21 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Artificial Intelligence: A Modern Approach, "['Stuart Russell', 'Peter Norvig']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1385600294i/27543.jpg,  4.20 avg rating — 4,396 ratings — published 1994 — 6 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Computer Vision: Algorithms and Applications, "['Richard Szeliski']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1349005484i/9494221.jpg,  4.22 avg rating — 144 ratings — published 2010 — 11 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Database Systems: The Complete Book 2nd (second) edition, "['Hector Garcia-Molina']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1699471882i/148881412.jpg,  4.50 avg rating — 2 ratings — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Deep Generative Modeling, "['Jakub M Tomczak']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1645819599i/60496162.jpg,  4.20 avg rating — 5 ratings — 8 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Deep Learning, "['Ian Goodfellow', 'Yoshua Bengio', 'Aaron Courville']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490810628i/24072897.jpg,  4.44 avg rating — 2,074 ratings — published 2016 — 22 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Deep Learning: Foundations and Concepts, "['Christopher M. Bishop', 'Hugh Bishop']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1719110666i/198282489.jpg,  4.59 avg rating — 39 ratings — 5 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Deploy Machine Learning Models to Production: With Flask, Streamlit, Docker, and Kubernetes on Google Cloud Platform, "['Pramod Singh']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1608630497i/55404221.jpg, 3.00 avg rating — 5 ratings — 2 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Designing Deep Learning Systems: A software engineers guide, "['Chi Wang', 'Donald Szeto']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1687382950i/60772023.jpg,  4.40 avg rating — 10 ratings — 3 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications, "['Chip Huyen']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653945265i/60715378.jpg,  4.47 avg rating — 906 ratings — published 2022 — 13 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Digital Image Processing, "['Rafael C. Gonzalez']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1386925076i/196018.jpg,  4.09 avg rating — 742 ratings — published 1977 — 40 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Dive into Deep Learning, "['Aston Zhang', 'Zachary C. Lipton', 'Mu Li']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1681805605i/122776185.jpg,  4.44 avg rating — 18 ratings — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Fundamentals of Music Processing: Audio, Analysis, Algorithms, Applications, "['Meinhard Müller']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1442833416i/26498431.jpg,  4.62 avg rating — 16 ratings — published 2015 — 9 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Game Engine Architecture, "['Jason Gregory']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348115696i/6709076.jpg,  4.41 avg rating — 575 ratings — published 2009 — 20 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Game Programming Patterns, "['Robert Nystrom']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1415081987i/15499449.jpg,  4.48 avg rating — 1,529 ratings — published 2011 — 9 editions );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Generative Artificial Intelligence: Exploring the Power and Potential of Generative AI, "['Shivam R Solanki', 'Drupad K Khublani']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1721137262i/216540653.jpg,  0.00 avg rating — 0 ratings — 1 edition );
+INSERT INTO ksiazki (tytul, autorzy, obraz, grayText) VALUES (Hands-On Machine Learning with Scikit-Learn and TensorFlow, "['Aurélien Géron']", https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1478536137i/32899495.jpg,  4.55 avg rating — 2,730 ratings — published 2017 — 43 editions );
+172.18.0.10 - - [22/Aug/2025 09:37:39] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:37:48] "[35m[1mGET /booksSearchGoodReads/head+first/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:37:55] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:37:55] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:38:21] "[35m[1mGET /booksSearchGoodReads/head+first+android/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:38:35] "[35m[1mGET /booksSearchGoodReads/head+first+html5/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:38:37] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:38:37] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:39:32] "[35m[1mGET /booksSearchGoodReads/head+first+javascript/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:39:34] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:39:34] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:39:47] "[35m[1mGET /booksSearchGoodReads/head+first+jquery/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:39:48] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:39:48] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:40:04] "[35m[1mGET /booksSearchGoodReads/head+first+python/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:40:05] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:40:05] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:40:20] "[35m[1mGET /booksSearchGoodReads/head+first+ruby/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:40:21] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:40:22] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:41:05] "[35m[1mGET /booksSearchGoodReads/introduction+to+algorithms/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:41:09] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:41:09] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:41:28] "[35m[1mGET /booksSearchGoodReads/tworzenie+aplikacji+internetowych/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:41:34] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:41:35] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:41:50] "[35m[1mGET /booksSearchGoodReads/tworzenie+baz+danych+i+administrowanie/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:41:53] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:41:53] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:42:21] "[35m[1mGET /booksSearchGoodReads/learning+c+get+started+with+c/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:42:24] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:42:24] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:43:12] "[35m[1mGET /booksSearchGoodReads/metaheuristics+in+machine/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:43:13] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:43:13] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:43:23] "[35m[1mGET /booksSearchGoodReads/php+5+and+mysql+bible/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:43:26] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:43:26] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:43:44] "[35m[1mGET /booksSearchGoodReads/project+management+for+automotive/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:43:49] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:43:49] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:44:20] "[35m[1mGET /booksSearchGoodReads/reinforcement+learning/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:44:22] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:44:22] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:44:36] "[35m[1mGET /booksSearchGoodReads/representation+learning/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:44:38] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:44:38] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:44:54] "[35m[1mGET /booksSearchGoodReads/speech+and+language+processing/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:44:55] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:44:55] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:45:18] "[35m[1mGET /booksSearchGoodReads/the+linux+command+line/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:45:20] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:45:20] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:45:46] "[35m[1mGET /booksSearchGoodReads/trends+in+artificial+intelligence/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:45:56] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:45:56] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:46:25] "[35m[1mGET /booksSearchGoodReads/understanding+deep+learning/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:46:36] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:46:36] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:47:03] "[35m[1mGET /booksSearchGoodReads/unix+network+programming/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:47:05] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:47:05] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:47:25] "[35m[1mGET /booksSearchGoodReads/software+estimation+without+guessing/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:47:25] "[35m[1mGET /booksSearchGoodReads/software+estimation+without+guessing/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:47:28] "OPTIONS /addNewBookFromScratch/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:47:28] "[35m[1mPOST /addNewBookFromScratch/1 HTTP/1.1[0m" 204 -
+172.18.0.10 - - [22/Aug/2025 09:47:48] "[35m[1mGET /booksSearchGoodReads/adult+children+of+emotinally/1 HTTP/1.1[0m" 201 -
+172.18.0.10 - - [22/Aug/2025 09:48:06] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 09:48:06] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:48:06] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:48:06] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 09:48:06] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:48:06] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:50:06] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 09:50:06] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:06] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:50:18] "OPTIONS /changeCategories/87 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:18] "[35m[1mPATCH /changeCategories/87 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 09:50:18] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:18] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:50:31] "OPTIONS /addCategory/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:31] "[35m[1mPOST /addCategory/1 HTTP/1.1[0m" 211 -
+172.18.0.10 - - [22/Aug/2025 09:50:31] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 09:50:36] "OPTIONS /changeCategories/173 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:36] "[35m[1mPATCH /changeCategories/173 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 09:50:36] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:36] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:50:39] "OPTIONS /changeCategories/172 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:39] "[35m[1mPATCH /changeCategories/172 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 09:50:39] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:50:50] "OPTIONS /addCategory/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:50] "[35m[1mPOST /addCategory/1 HTTP/1.1[0m" 211 -
+172.18.0.10 - - [22/Aug/2025 09:50:50] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 09:50:54] "OPTIONS /changeCategories/125 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:54] "[35m[1mPATCH /changeCategories/125 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 09:50:54] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:50:54] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:51:01] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:51:01] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:51:12] "OPTIONS /addCategory/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:51:12] "[35m[1mPOST /addCategory/1 HTTP/1.1[0m" 211 -
+172.18.0.10 - - [22/Aug/2025 09:51:12] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 09:51:15] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:51:15] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:51:27] "OPTIONS /changeCategories/90 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:51:27] "[35m[1mPATCH /changeCategories/90 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 09:51:27] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:51:27] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:51:57] "OPTIONS /addCategory/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:51:57] "[35m[1mPOST /addCategory/1 HTTP/1.1[0m" 211 -
+172.18.0.10 - - [22/Aug/2025 09:51:57] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 09:55:04] "OPTIONS /changeCategories/120 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:55:04] "[35m[1mPATCH /changeCategories/120 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 09:55:04] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:55:04] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:55:23] "OPTIONS /changeCategories/79 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:55:23] "[35m[1mPATCH /changeCategories/79 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 09:55:23] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:55:23] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:55:42] "OPTIONS /changeCategories/23 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:55:42] "[35m[1mPATCH /changeCategories/23 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 09:55:42] "OPTIONS /getBooks/1/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:55:42] "[35m[1mPOST /getBooks/1/1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 09:56:03] "OPTIONS /addCategory/1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 09:56:03] "[35m[1mPOST /addCategory/1 HTTP/1.1[0m" 211 -
+172.18.0.10 - - [22/Aug/2025 09:56:03] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:16:04] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:16:04] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:16:04] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:16:19] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:16:19] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:16:19] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:17:33] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:17:33] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:17:33] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:18:44] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:18:44] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:18:44] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:39:59] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:39:59] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:39:59] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:40:00] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:40:00] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:40:02] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:40:02] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:40:02] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:40:02] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:40:41] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:40:41] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:40:41] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:40:41] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:40:42] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:40:43] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:40:43] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:40:44] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:40:44] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:40:55] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:40:55] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:40:55] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:41:00] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:41:00] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:42:15] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:42:15] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:42:16] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:46:23] "OPTIONS /getBooks/1/-1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:23] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:46:23] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:46:24] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:46:24] "OPTIONS /getBooks/1/4 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:24] "[35m[1mPOST /getBooks/1/4 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:46:26] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:46:26] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:46:29] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:46:29] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:29] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:46:33] "OPTIONS /getBooks/1/-1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:33] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:46:33] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:46:50] "OPTIONS /changeCategories/311 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:50] "[35m[1mPATCH /changeCategories/311 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 10:46:50] "OPTIONS /getBooks/1/-1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:50] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:46:53] "OPTIONS /changeCategories/305 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:54] "[35m[1mPATCH /changeCategories/305 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 10:46:54] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:46:56] "OPTIONS /changeCategories/306 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:56] "[35m[1mPATCH /changeCategories/306 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 10:46:56] "OPTIONS /getBooks/1/-1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:56] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:46:58] "OPTIONS /changeCategories/296 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:46:58] "[35m[1mPATCH /changeCategories/296 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 10:46:58] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:47:01] "OPTIONS /changeCategories/295 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:47:01] "[35m[1mPATCH /changeCategories/295 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 10:47:01] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:47:03] "OPTIONS /changeCategories/297 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:47:03] "[35m[1mPATCH /changeCategories/297 HTTP/1.1[0m" 209 -
+172.18.0.10 - - [22/Aug/2025 10:47:03] "OPTIONS /getBooks/1/-1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:47:03] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:47:18] "OPTIONS /readBook/308 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:47:18] "[35m[1mPATCH /readBook/308 HTTP/1.1[0m" 207 -
+172.18.0.10 - - [22/Aug/2025 10:47:18] "OPTIONS /getBooks/1/-1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:47:18] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:47:49] "OPTIONS /readBook/327 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:47:49] "[35m[1mPATCH /readBook/327 HTTP/1.1[0m" 207 -
+172.18.0.10 - - [22/Aug/2025 10:47:49] "OPTIONS /getBooks/1/-1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:47:49] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:47:55] "OPTIONS /readBook/298 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:47:55] "[35m[1mPATCH /readBook/298 HTTP/1.1[0m" 207 -
+172.18.0.10 - - [22/Aug/2025 10:47:55] "OPTIONS /getBooks/1/-1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:47:55] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:48:33] "OPTIONS /holdBook/308 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:48:33] "[35m[1mPATCH /holdBook/308 HTTP/1.1[0m" 207 -
+172.18.0.10 - - [22/Aug/2025 10:48:33] "OPTIONS /getBooks/1/-1 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:48:33] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:48:33] "OPTIONS /holdBook/327 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:48:34] "[35m[1mPATCH /holdBook/327 HTTP/1.1[0m" 207 -
+172.18.0.10 - - [22/Aug/2025 10:48:34] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:48:34] "OPTIONS /holdBook/298 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:48:34] "[35m[1mPATCH /holdBook/298 HTTP/1.1[0m" 207 -
+172.18.0.10 - - [22/Aug/2025 10:48:34] "[35m[1mPOST /getBooks/1/-1 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:48:38] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:48:38] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:48:38] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:48:49] "OPTIONS /readBook/306 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:48:49] "[35m[1mPATCH /readBook/306 HTTP/1.1[0m" 207 -
+172.18.0.10 - - [22/Aug/2025 10:48:49] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:48:49] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:49:03] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:49:03] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:49:03] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:49:04] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:49:04] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -
+172.18.0.10 - - [22/Aug/2025 10:50:34] "OPTIONS /getBooks/1/0 HTTP/1.1" 200 -
+172.18.0.10 - - [22/Aug/2025 10:50:34] "[35m[1mGET /getCategories/1 HTTP/1.1[0m" 208 -
+172.18.0.10 - - [22/Aug/2025 10:50:34] "[35m[1mPOST /getBooks/1/0 HTTP/1.1[0m" 206 -

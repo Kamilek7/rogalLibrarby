@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import SmolSearch from './SmolSearch';
+import ModalRender from './AddCategory'; 
+import BookOnBoard from './BookOnBoard';
 
 const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
 
-    const [infoId, setInfoId] = useState(null);
     const [books, setBooks] = useState([]);
     const [categories, setCats] = useState([]);
     const [category, setCat] = useState(0);
-    const [topModal, setModal] = useState(false);
-    const [categoryName, setCategory] = useState("");
+
 
     const statuses = [{name: "Na półce", id: 1}, {name: "Czytane", id:2}, {name:"Ukończone", id:3}, {name:"Wstrzymane", id:4}]
 
@@ -39,16 +39,6 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
         getBooks();
     }
 
-
-    const remove = async (bookID) => {
-        const url = "https://librarby-backend.rogalrogalrogalrogal.online/removeBook/" + bookID;
-        const options = {
-            method:"DELETE"
-        }
-        const response = await fetch(url, options);
-        getBooks();
-    }
-
     const progress = (books) =>
     {
         var booksRead = books.filter(book => book.status==3)
@@ -58,38 +48,6 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
                 <div class='progress'><div class='progressIn' style={{width:booksRead.length/books.length*100 + "%"}}></div></div>
             </div>
         )
-    }
-
-    const passNewStatus = async (id, status) => {
-        const options = {
-            method: "PATCH"
-        }
-        const url = "https://librarby-backend.rogalrogalrogalrogal.online/changeStatus/" + id + "/" + status;
-        const response = await fetch(url, options);
-        getBooks();
-    }
-
-    const passNewCategories = async (id, e) => {
-        const form = e.currentTarget;
-        const data = new FormData(form);
-        const catStr = data.getAll("categories");
-        var cats = []
-        catStr.forEach((value) => {
-            cats.push(parseInt(value))
-        })
-        const dane = {
-            categories: cats
-        }
-        const url = "https://librarby-backend.rogalrogalrogalrogal.online/changeCategories/" + id;
-        const options = {
-            method: "PATCH",
-            headers:  {
-                "Content-Type" : "application/json"
-            },
-            body: JSON.stringify(dane)
-        }
-        const response = await fetch(url, options);
-        getBooks();
     }
 
     const callBack = (bookData) => {
@@ -108,8 +66,6 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
         
         return (
             <div>
-                
-                
                 <div class='bookContainerUser'>
                     {
                         
@@ -140,41 +96,7 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
                                     break;
                             }
                             return (
-                                <div key={book["ID"]} class='bookFound' style={{borderBottom: "5px solid " + color}}>
-                                    
-                                    <img class='cover' src={book["obraz"]} ></img>
-                                    <div class='vert-buttons'>
-                                        {buttons.map(button => {
-                                            return (<button onClick={ () =>{button.func(book["ID"])}} class={button.class}><i class={button.icon}></i></button>)
-                                        })}
-                                        <button class='read' onClick={() => {setInfoId(book["ID"])}}><i class='icon-dot-3' ></i></button>
-                                    </div>
-                                    
-                                    <div class={(infoId==book["ID"]) ? 'bookInfo' : "bookInfo-hidden"}>
-                                        Kategorie:
-                                        <form onChange={(e) => {passNewCategories(book["ID"], e)}}>
-                                            <div style={{"display":"flex", "margin":"auto"}}>
-                                                    <div class='categories'>
-                                                    {categories.map((cat) => {
-                                                        return (<div style={{"display":"flex", "margin":"auto"}}><input name='categories' defaultChecked={book["kategoria"].includes(cat["ID"])} type="checkbox"  value={cat["ID"]}></input>{cat["nazwa"]}</div>)
-                                                    })}
-                                                    </div>
-                                            </div>
-                                        </form>
-                                        <div class='statusSelect'>
-                                                Zmień status:<br></br>
-                                            <select onChange={(e) => {passNewStatus(book["ID"], e.target.value)}} defaultValue={parseInt(book["status"])}>
-                                                {statuses.map(status => {
-                                                    return (<option value={status.id}>{status.name}</option>)
-                                                })}
-                                            </select>
-                                        </div>
-                                        <div class='hori-buttons'>
-                                            <button class='remove' onClick={() => {remove(book["ID"])}}><i class='icon-trash-empty' ></i></button>
-                                            <button class='read' onClick={() => {setInfoId(null)}}><i class='icon-dot-3' ></i></button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <BookOnBoard book={book} buttons={buttons} getBooks={getBooks} categories={categories} color={color} statuses={statuses}></BookOnBoard>
                             )
                             }))
                             }</div>)
@@ -203,7 +125,6 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
                         return (<option value={selector["ID"]}>{selector["nazwa"]}</option>)
                     })}
                 </select>
-                <button class='normalButt' onClick={() =>{setModal(true)}}>Dodaj więcej kategorii</button>
             </div>
         )
     }
@@ -227,32 +148,7 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
         return callBack(bookData.books);
     }
 
-    const newCategory = async (name) => {
-        setModal(false)
-        const data = {name:name}
-        const url = "https://librarby-backend.rogalrogalrogalrogal.online/addCategory/" + userID;
-                const options = {
-            method: "POST",
-            headers:  {
-                "Content-Type" : "application/json"
-            },
-            body: JSON.stringify(data)
-        }
-        const response = await fetch(url, options);
-        getSelectors();
-    }
 
-    const modalRender = () => {
-        return (
-            <div class={(topModal)?"categoryAdd": "categoryAdd-hidden"}>
-                <div class='divTitleMinor'>Dodaj nową kategorię książek</div>
-                <input value={categoryName} onChange={(e) => {setCategory(e.target.value)}} type='text'></input>
-                <button class='normalButt' onClick={(e) =>{newCategory(categoryName)}}>Dodaj kategorie</button>
-                <button class='normalButt' onClick={() =>{setModal(false)}}>Wroc</button>
-            </div>
-        )
-
-    }
 
     useEffect(() => {
         getSelectors();
@@ -265,10 +161,11 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
                 <div class='divTitleMinor'>Twoje książki</div>
                 
                 {printSelectors()}
+                <ModalRender getSelectors={getSelectors}></ModalRender>
                 <SmolSearch callback={getBooks}></SmolSearch>
                 {progress(books)}
                 
-                {modalRender()}
+                
                 
             </div>
             {callBack(books)}
