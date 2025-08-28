@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 const SearchBar = ({callback, user}) => {
     const [title, setTitle] = useState("")
-    console.log(user);
     const searchForTitle = async () => {
         var newTitle = title.replaceAll(" ", "+")
         if (typeof user == 'undefined')
@@ -19,7 +18,7 @@ const SearchBar = ({callback, user}) => {
             callback(0);
         }
     }
-    return <div class='searchBarBG'>
+    return <div class='searchBarModal'>
         <div class='divTitle'>{user ? "Wyszukaj książkę aby dodać ją do swojego zbioru" : "Wyszukaj dowolną książkę z bazy danych."}</div>
         <div id="searchBar">
             <input value={title} onChange={(e) => setTitle(e.target.value)} type="text"></input><button onClick={searchForTitle} ><i class='icon-search'></i></button>

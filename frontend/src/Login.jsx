@@ -31,18 +31,20 @@ const Login = ({error, onLogin}) => {
         }
         
     }
-    return <div class='contentBox'>
-        <div class='divTitle'>{mode=="login"? "Zaloguj" : "Zarejestruj się"}</div>
-        <p>Zaloguj się do swojego konta lub utwórz nowe, aby umożliwić sprawne korzystanie z portalu!</p>
-        <span style={{color:"red", height:"3vh", textAlign:"center"}} id='errorCode'>{error}</span>
-        <form class='login' onSubmit={(e) => {mode=="login"? onLogin({login:loginRef.current?.value, haslo:passRef.current?.value, e:e}):register(e)}}>
-            <p>Login</p>
-            <input ref={loginRef} type='text'></input>
-            <p>Hasło</p>
-            <input ref={passRef} type='password'></input>
-            <input id='submit' type='submit' value={mode=="login"?"Zaloguj się":"Zarejestruj się"}></input>
-        </form>
-        <button onClick={()=>{mode=="login"? setMode("register"):setMode("login")}}>{mode=="login"?"Załóż konto":"Zaloguj się"}</button>
+    return <div class='contentBoxFuckCSS'>
+        <div>
+            <div class='divTitle'>{mode=="login"? "Zaloguj" : "Zarejestruj się"}</div>
+            <p>Zaloguj się do swojego konta lub utwórz nowe, aby umożliwić sprawne korzystanie z portalu!</p>
+            <span style={{color:"red", height:"3vh", textAlign:"center"}} id='errorCode'>{error}</span>
+            <form class='login' onSubmit={(e) => {mode=="login"? onLogin({login:loginRef.current?.value, haslo:passRef.current?.value, e:e}):register(e)}}>
+                <p>Login</p>
+                <input ref={loginRef} type='text'></input>
+                <p>Hasło</p>
+                <input ref={passRef} type='password'></input>
+                <input id='submit' type='submit' value={mode=="login"?"Zaloguj się":"Zarejestruj się"}></input>
+            </form>
+            <button onClick={()=>{mode=="login"? setMode("register"):setMode("login")}}>{mode=="login"?"Załóż konto":"Zaloguj się"}</button>
+        </div>
     </div> 
 }
 export default Login

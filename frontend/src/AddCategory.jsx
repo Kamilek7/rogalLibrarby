@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 
 
-const ModalRender = ({getSelectors}) => {
+const ModalRender = ({getSelectors, userID}) => {
 
     const [topModal, setModal] = useState(false);
     const [categoryName, setCategory] = useState("");

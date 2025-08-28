@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react'
 import SmolSearch from './SmolSearch';
 import ModalRender from './AddCategory'; 
 import BookOnBoard from './BookOnBoard';
+import ModalWindow from './ModalWindow';
+import NavComponent from './NavComponent';
 
-const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
+const UserBoard = ({setCookie, userID, wyloguj}) => {
 
     const [books, setBooks] = useState([]);
     const [categories, setCats] = useState([]);
     const [category, setCat] = useState(0);
-
 
     const statuses = [{name: "Na półce", id: 1}, {name: "Czytane", id:2}, {name:"Ukończone", id:3}, {name:"Wstrzymane", id:4}]
 
@@ -43,7 +44,7 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
     {
         var booksRead = books.filter(book => book.status==3)
         return(
-            <div>
+            <div class='progressBar'>
                 Stopień przeczytania ({booksRead.length}/{books.length}):
                 <div class='progress'><div class='progressIn' style={{width:booksRead.length/books.length*100 + "%"}}></div></div>
             </div>
@@ -153,24 +154,25 @@ const UserBoard = ({setCookie, userID, booksFromOtherPart, wyloguj}) => {
     useEffect(() => {
         getSelectors();
         getBooks();
-    }, [booksFromOtherPart, category])
+    }, [category])
 
-    return <div class='contentBox'>
-        <div id='headerBox'>
-            <div class='heading'>
-                <div class='divTitleMinor'>Twoje książki</div>
-                
-                {printSelectors()}
-                <ModalRender getSelectors={getSelectors}></ModalRender>
-                <SmolSearch callback={getBooks}></SmolSearch>
+    return <div>
+        <div class='contentBox'>
+            <div id='headerBox'>
+                <div class='heading'>
+                    <div class='divTitle'>Twoje książki</div>
+                    <SmolSearch callback={getBooks}></SmolSearch>
+                    {printSelectors()}
+                    <ModalRender getSelectors={getSelectors} userID={userID}></ModalRender>
+                    
+                    
+                </div>
                 {progress(books)}
-                
-                
-                
+                {callBack(books)}
             </div>
-            {callBack(books)}
+            <NavComponent wyloguj={wyloguj} userID={userID}></NavComponent>
+            
         </div>
-        <button onClick={wyloguj}>Wyloguj się</button>
     </div>
 }
 export default UserBoard

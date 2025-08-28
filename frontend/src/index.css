@@ -28,7 +28,7 @@
   
   --bookFoundWidth: 20rem;
   --bookFoundHeight: 16rem;
-
+  overflow: hidden;
 }
 
 a {
@@ -97,7 +97,7 @@ button:focus-visible {
   font-size: 2rem;
   color:#b9b9b9;
   text-align: center;
-  width:40vw;
+  width:calc(10rem + 20vw);
   padding:0;
   border: 2px solid white;
 }
@@ -140,7 +140,7 @@ button:focus-visible {
 .cover
 {
   aspect-ratio: 3 / 4;
-  margin-right:1rem;
+  margin-right:1vw;
   border-radius: 0.5rem;
 }
 .addToLibrary
@@ -160,10 +160,11 @@ button:focus-visible {
 }
 .divTitle
 {
-  font-size: 1.8rem;
+  font-size: calc(3vh + 0.6vw);
   font-weight: bold;
-  margin-top: 1.5rem;
-  margin-bottom: 0.8rem;
+  padding-top: 1.5vh;
+  padding-inline:3vw;
+  margin-bottom: 0.8vh;
 }
 .divTitleMinor
 {
@@ -188,10 +189,14 @@ button:focus-visible {
 {
   border-radius: 0 0 2rem 2rem;
   margin:auto;
+  min-height:80vh;
   margin-top:0;
-  width:70%;
-  padding: 1rem 2rem 2rem 2rem;
+  width:80%;
+  padding: 0rem 2rem 2rem 2rem;
   background:var(--gradientBG);
+      display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 form input
@@ -227,7 +232,7 @@ form input
   width:80%;
   padding-inline: 5rem;
   padding-block: 1rem;
-  height: 37vh;
+  height: 45vh;
   overflow: scroll;
   overflow-x: hidden;
   align-items: center;
@@ -249,10 +254,131 @@ form input
   grid-column-start: 1;
   grid-column-end: 4;
 }
+.hori-buttons
+{
+  display:flex;
+  width:70%;
+  margin:auto;
+}
+
+.hori-buttons > *
+{
+  margin:auto;
+  display:block;
+}
+@media only screen and (orientation: portrait) {
+  :root
+  {
+      --bookFoundWidth: 60vw;
+      --bookFoundHeight: 40vw;
+  }
+
+  .bookContainer .bookFound .cover
+  {
+    aspect-ratio: 3 / 4;
+    width:30vw;
+    border-radius: 0.5rem;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+    .bookFound 
+  {
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    width:50vw;
+    height: fit-content;
+    padding: 1rem;
+    background-color: #3e474098;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+  }
+    .bookFound .bookContent
+  {
+    margin:auto;
+     grid-area: 2 / 1 / 4 / 3; 
+     width:100%;
+     padding:0;
+  }
+  .bookContent .authors
+  {
+    display:flex;
+    width:100%;
+    margin:auto;
+  }
+  .bookContent .author
+  {
+      margin:auto;
+    font-size: 4vw;
+  }
+  .bookContent .bookData
+  {
+      margin-top: 1.5rem;
+  }
+  .bookFound .addToLibrary
+  {
+     grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .bookContainerGrid
+  {
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .containerTitle
+  {
+    margin:auto;
+    margin-block: 1vw;
+    font-weight: bold;
+    font-size: 1.4rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .bookContainerUser
+  {
+
+    margin:auto;
+    height:100%;
+    padding-inline: 0rem;
+    padding-block: 0rem;
+    height: 40vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vw;
+    mask-image: linear-gradient(0deg, transparent, black 10%, black 90%, transparent);
+  }
+  .contentBox
+  {
+    border-radius: 0 0 2rem 2rem;
+    margin:auto;
+    height:100vh;
+    padding: 0;
+    margin-top:0;
+    width:100%;
+    background:var(--gradientBG);
+  }
+  .hori-buttons
+  {
+    display:flex;
+    width:100%;
+    margin:auto;
+  }
+  .hori-buttons > *
+  {
+    display:block;
+    margin:auto;
+  }
+}
+
 
 .bookContainerUser .bookFound
 {
-    margin-block: 1rem;
+    margin-block: 1vw;
     display:flex;
     width: var(--bookFoundWidth);
     height: var(--bookFoundHeight);
@@ -324,10 +450,6 @@ table p
   margin-bottom: 1rem;
 }
 
-#headerBox
-{
-  margin-top:  -3rem;
-}
 .bookInfo
 {
   transition:all 0.4s ease-in-out;
@@ -356,7 +478,7 @@ table p
   width:80%;
   margin:auto;
   margin-top:0.4rem;
-  height:calc(var(--bookFoundHeight)/3.5);
+  height:calc(var(--bookFoundHeight)/2);
   overflow:scroll;
 }
 .categories > *
@@ -376,16 +498,12 @@ table p
 
   margin-top:0.4rem;
 }
-.hori-buttons
-{
-  margin:auto;
-  display:flex;
-  width:70%;
-}
 
 .heading
 {
+  padding-top: 1vw;
   position: relative;
+  margin-bottom:0.9vw;
   overflow: hidden;
 }
 .heading > *
@@ -397,7 +515,7 @@ table p
 {
   transition: 0.4s all ease-in-out;
   position:absolute;
-  top:-20rem;
+  top:-25rem;
   background-color: #131313d7;
   padding-top:1rem;
   width:100%;
@@ -430,24 +548,99 @@ table p
   width:fit-content;
   margin:auto;
   display:flex;
+  margin-top: 1vw;
+  margin-bottom: 1rem
 }
 #searchBarSmol input[type=text]
 {
-  height: 1.5rem;
+  height: 2rem;
   font-size: 1rem;
   color:#b9b9b9;
   text-align: center;
-  width:20vw;
+  width:calc(11rem + 15vw);
   padding:0;
   border: 2px solid white;
 }
 #searchBarSmol button
 {
   width:4rem;
-  height:1.8rem;
+  height:2.3rem;
   padding:0;
 }
 #searchBarSmol .icon-search::before
 {
   transform:scale(1.0)
+}
+
+.modalMain, .modalMain-hidden
+{
+  position:absolute;
+  top: 0vh;
+  left:0;
+  backdrop-filter: blur(10px);
+  width:100vw;
+  height:100vh;
+  transition: 0.5s ease-in-out all;
+  overflow: hidden;
+}
+.modalMain-hidden
+{
+  top:100vh;
+}
+.contentBoxFuckCSS
+{
+    border-radius: 0 0 2rem 2rem;
+  margin:auto;
+  height:80vh;
+  margin-top:0;
+  width:80%;
+  padding: 0rem 2rem 2rem 2rem;
+  background:var(--gradientBG);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contentBoxFuckCSS > *
+{
+  margin:auto;
+  display:block;
+}
+
+#headerBox
+{
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#headerBox > *
+{
+  margin-block:auto;
+  display:block;
+}
+.navigation
+{
+  height:auto;
+  display:block;
+  margin:auto;
+  width:60%;
+}
+.navigation > *
+{
+  margin:auto;
+}
+.navBottom
+{
+  height:20vh;
+}
+.bookInfoContainer
+{
+  height:100%;
+}
+.bookInfoContainer > .hori-buttons
+{
+  position:absolute;
+  bottom:1vw;
+  left:0;
+  width:100%;
 }

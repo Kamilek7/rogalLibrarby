@@ -123,7 +123,7 @@ def getBooks(userID, category):
     elif category==-1:
         cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE userID={userID} AND kategoria='' {searchable}ORDER BY tytul;")
     else:
-        cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE kategoria LIKE '%{category}%' {searchable}ORDER BY tytul;")
+        cursor.execute(f"SELECT * FROM zaleznosci JOIN ksiazki ON bookID = ksiazki.ID WHERE kategoria LIKE '%{category},%' OR kategoria LIKE '%{category}]%' {searchable}ORDER BY tytul;")
     res = cursor.fetchall()
     return jsonify({"books": res}), 206
 
@@ -157,7 +157,7 @@ def removeBook(bookID):
 @app.route("/getCategories/<int:userID>")
 def getCategories(userID):
     cursor = mysql.connection.cursor()
-    cursor.execute(f"SELECT * FROM kategorie WHERE user={userID}")
+    cursor.execute(f"SELECT * FROM kategorie WHERE user={userID} ORDER BY nazwa")
     res = cursor.fetchall()
     return jsonify({"categories" : res}), 208
 
