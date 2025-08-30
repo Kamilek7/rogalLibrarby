@@ -62,5 +62,5 @@
 .icon-logout:before { content: '\e805'; } /* '' */
 .icon-user:before { content: '\e806'; } /* '' */
 .icon-trash-empty:before { content: '\f1f8'; transform: scale(1.4); display:inline-block} /* '' */
-.icon-plus-squared:before { content: '\f0fe'; } /* '' */
+.icon-plus-squared:before { content: '\f0fe'; transform: scale(1.2); display:inline-block} /* '' */
 .icon-reply:before { content: '\f112'; } /* '' */
